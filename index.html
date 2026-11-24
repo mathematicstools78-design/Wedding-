@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anita & Rahul - Wedding Invitation</title>
+<!--
+MY DETAILS (exactly as given)
+Bride: Anita | Groom: Rahul | Order: Bride & Groom | Initials: A&R
+Blessing: Shree Ganeshaya Namah | Hero subtitle: Wedding Invitation
+Main date: 4 December 2026, 8:00 PM IST
+Venue: royal  palce | Address: Tatarpur Bhagalpur
+Maps: https://maps.app.goo.gl/GW4sc53C8Bh2ZxuR9?g_st=awb
+Dress code: Traditional Attire
+Bride bio: : A beautiful soul with a heart full of dreams and happiness.
+Groom bio: A kind-hearted soul ready to begin a beautiful journey of love.
+Footer: Your presence will make our celebration even more special. We look forward to celebrating this beautiful day with you.
+Families: With love and blessings from the Sharma and Singh families.
+Functions: Mehndi | 25 Nov 2026 | Wednesday | 8:00 PM | Hussainpur | Traditional Attire
+Haldi | 26 Nov 2026 | Thursday | 11:00 AM | Hussainpur | Traditional Attire
+Wedding | 4 Dec 2026 | Friday | 8:00 PM | Hussainpur | Traditional Attire
+Reception | 6 Dec 2026 | Sunday | 7:30 PM | Hussainpur | Sadu Mahal
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+/* ===== STYLE DNA TOKENS ===== */
+:root{--bg:#F5F1F9;--card:rgba(255,255,255,.82);--mag:#C2185B;--terra:#B5532A;--ink:#5A4F5E;--rose:#F3C6CF;--sage:#C9DDE0;--gold:#C9A24B;--peach:#F6D8C8}
+*{box-sizing:border-box;margin:0}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{font:500 17px/1.6 'Cormorant Garamond',serif;color:var(--ink);padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+background:radial-gradient(circle at 0 6%,var(--rose),transparent 24%),radial-gradient(circle at 100% 28%,var(--sage),transparent 22%),radial-gradient(circle at 0 66%,var(--peach),transparent 24%),radial-gradient(circle at 100% 92%,var(--rose),transparent 24%),var(--bg)}
+body.lock{overflow:hidden;height:100vh}
+a,button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--mag);outline-offset:3px}
+.script{font-family:'Great Vibes',cursive;font-weight:400;color:var(--mag)}
+h2{font:400 44px/1.1 'Great Vibes',cursive;color:var(--mag);text-align:center;margin-bottom:28px}
+.s{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:56px 20px;text-align:center}
+.cap{font-weight:700;letter-spacing:.14em;color:var(--mag)}
+.rule{display:flex;align-items:center;justify-content:center;gap:10px;color:var(--mag);margin:14px 0}
+.rule:before,.rule:after{content:"";height:1px;width:70px;background:var(--terra);opacity:.5}
+.c{background:var(--card);border:1px solid rgba(181,83,42,.25);border-radius:22px 22px 4px 4px;padding:20px;box-shadow:0 8px 24px rgba(194,24,91,.08)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;border:1.5px solid var(--mag);background:var(--mag);color:#fff;text-decoration:none;cursor:pointer;font-weight:700;letter-spacing:.06em}
+.btn.o{background:transparent;color:var(--mag)}
+.row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:18px}
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease;transition-delay:calc(var(--i,0)*120ms)}
+.rv.in{opacity:1;transform:none}
+/* ===== OPENING ===== */
+#op{position:fixed;inset:0;z-index:100;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;transition:opacity 1s ease;text-align:center}
+#op.out{opacity:0}
+#op .bl{font:400 40px 'Great Vibes',cursive;color:var(--terra)}
+.seal{position:relative;width:128px;height:128px;border-radius:50%;border:0;cursor:pointer;background:radial-gradient(circle at 35% 30%,#d9774a,var(--terra) 55%,#7e3416);color:#fff4e6;font:700 34px 'Great Vibes',cursive;box-shadow:0 0 0 6px rgba(181,83,42,.18),0 10px 28px rgba(126,52,22,.4);animation:glow 3s ease-in-out infinite}
+@keyframes glow{50%{transform:scale(1.05)}}
+.go .seal{animation:none;transform:scale(1.12)}
+.ring{position:absolute;left:50%;top:50%;width:140px;height:140px;margin:-70px;border-radius:50%;border:2px solid var(--gold);opacity:0;pointer-events:none}
+.go .ring{animation:rg 1.2s ease-out forwards}
+@keyframes rg{from{opacity:.9;transform:scale(.6)}to{opacity:0;transform:scale(9)}}
+.flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+.go .flash{animation:fl 1.2s ease forwards}
+@keyframes fl{40%{opacity:.8}to{opacity:0}}
+.sp{position:absolute;left:50%;top:50%;width:8px;height:8px;background:var(--gold);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);pointer-events:none}
+/* ===== HERO ===== */
+.hero{position:relative;z-index:2;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:30px 20px}
+.hbg{position:absolute;inset:-10% 0;pointer-events:none;will-change:transform}
+.arch{position:relative;width:min(380px,92vw);padding:60px 18px 46px;text-align:center;border:10px double rgba(194,24,91,.28);border-radius:190px 190px 6px 6px;background:rgba(255,255,255,.75)}
+.hero .bless{font:700 15px 'Cormorant Garamond';letter-spacing:.2em;color:var(--terra)}
+.names{font:400 66px/1.05 'Great Vibes',cursive;color:var(--mag);margin:14px 0 6px}
+.names small{display:block;font-size:40px;color:var(--terra)}
+.hint{margin-top:22px;font-size:15px;opacity:.75;animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(6px)}}
+/* couple */
+.pair{display:grid;gap:18px}
+.pair svg{width:130px;height:auto}
+.pair h3{font:400 40px 'Great Vibes',cursive;color:var(--mag)}
+/* countdown */
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cd b{display:block;font:700 40px/1.1 'Cormorant Garamond';color:var(--mag)}
+.cd span{font-size:15px}
+/* details */
+.dg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dg b{display:block;color:var(--mag)}
+.map{display:block;margin-top:16px;text-decoration:none}
+.map svg{width:100%;height:auto;border-radius:16px;border:1px solid rgba(181,83,42,.3)}
+/* timeline */
+.tl{position:relative;text-align:left;padding-left:56px}
+.tl:before{content:"";position:absolute;left:21px;top:6px;bottom:6px;width:2px;background:repeating-linear-gradient(var(--terra) 0 6px,transparent 6px 12px);opacity:.5}
+.ev{position:relative;margin-bottom:18px}
+.ev i{position:absolute;left:-56px;top:12px;width:44px;height:44px;border-radius:50%;background:var(--mag);color:#fff;display:grid;place-items:center;font:700 20px 'Cormorant Garamond';font-style:normal}
+.ev h3{font:400 38px/1.1 'Great Vibes',cursive;color:var(--mag)}
+.ev a{color:var(--terra);font-weight:700;display:inline-flex;min-height:44px;align-items:center}
+/* album */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gal button{padding:0;border:6px solid #fff;border-radius:90px 90px 6px 6px;overflow:hidden;background:#fff;cursor:pointer;aspect-ratio:3/4;box-shadow:0 6px 18px rgba(194,24,91,.15)}
+.gal button:first-child{grid-column:1/-1;aspect-ratio:4/3;border-radius:150px 150px 6px 6px}
+.gal img{width:100%;height:100%;object-fit:cover;display:block}
+#lb{position:fixed;inset:0;z-index:90;background:rgba(40,24,40,.92);display:none;align-items:center;justify-content:center;flex-direction:column;gap:12px}
+#lb.on{display:flex}
+#lb img{max-width:92vw;max-height:76vh;object-fit:contain;border-radius:8px}
+#lb .bar{display:flex;gap:14px;align-items:center;color:#fff}
+#lb button{min-width:48px;min-height:48px;border-radius:50%;border:1px solid #fff;background:transparent;color:#fff;font-size:22px;cursor:pointer}
+/* footer */
+.ft p{margin:10px 0}
+.couple{width:min(260px,70vw);height:auto;margin:0 auto 10px;display:block}
+/* ===== EFFECT LAYERS ===== */
+#fx,#pl,#gl,#cv,#plane{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+#pl{z-index:6}#gl{z-index:4}#cv{z-index:7}
+#flight{position:absolute;left:0;top:0;width:100%;pointer-events:none;z-index:5;overflow:visible}
+.pt{position:absolute;top:-30px;left:var(--x);width:14px;height:14px;animation:fall var(--d) linear infinite;animation-delay:var(--w)}
+.pt i{display:block;width:100%;height:100%;border-radius:80% 0 80% 0;background:linear-gradient(135deg,#F3A9BB,var(--mag));opacity:.75;animation:sw 4s ease-in-out infinite alternate}
+@keyframes fall{to{transform:translate3d(0,112vh,0)}}
+@keyframes sw{from{transform:translateX(-18px) rotate(-30deg)}to{transform:translateX(18px) rotate(40deg)}}
+.gt{position:absolute;left:var(--x);top:var(--y);width:var(--z);height:var(--z);background:var(--gold);clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%);opacity:0;animation:tw var(--d) ease-in-out infinite;animation-delay:var(--w)}
+@keyframes tw{50%{opacity:.8;transform:scale(1.2)}}
+.ln{position:fixed;bottom:-70px;z-index:8;width:34px;height:46px;border-radius:12px 12px 8px 8px;background:linear-gradient(#ffd27a,#ff9a4d);box-shadow:0 0 28px 10px rgba(255,170,80,.55);pointer-events:none;opacity:0}
+.ft .btn.o{margin:6px}
+@media(min-width:600px){.pair{grid-template-columns:1fr 1fr}.names{font-size:78px}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hint,.seal,.pt,.gt,#op,.ln{animation:none!important;transition:none!important}.hbg{transform:none!important}}
+</style>
+</head>
+<body class="lock">
+<!-- ===== SVG SYMBOLS: caricature heads drawn once, reused ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="gh" viewBox="0 0 100 100"><path d="M16 40Q16 6 50 6T84 40Z" fill="#B3202F"/><path d="M18 34Q50 26 82 34" stroke="#C9A24B" stroke-width="4" fill="none"/><ellipse cx="72" cy="8" rx="6" ry="9" fill="#fff" transform="rotate(25 72 8)"/><ellipse cx="50" cy="58" rx="29" ry="31" fill="#C98E6B"/><circle cx="21" cy="58" r="6" fill="#C98E6B"/><circle cx="79" cy="58" r="6" fill="#C98E6B"/><path d="M22 60Q28 94 50 94T78 60Q70 78 50 78T22 60Z" fill="#2B1D1A"/><path d="M36 70Q50 64 64 70Q50 74 36 70Z" fill="#2B1D1A"/><path d="M40 78Q50 86 60 78" stroke="#8c2a2a" stroke-width="3" fill="none" stroke-linecap="round"/><circle cx="38" cy="54" r="3.2" fill="#2B1D1A"/><circle cx="62" cy="54" r="3.2" fill="#2B1D1A"/><path d="M31 46Q38 42 45 46M55 46Q62 42 69 46" stroke="#2B1D1A" stroke-width="2.5" fill="none"/><path d="M50 56v8" stroke="#a8704f" stroke-width="2.5" stroke-linecap="round"/></symbol>
+<symbol id="bh" viewBox="0 0 100 100"><path d="M10 52Q8 4 50 4T90 52V100H10Z" fill="#C21F3A"/><path d="M10 52Q8 4 50 4T90 52" stroke="#C9A24B" stroke-width="3" fill="none"/><ellipse cx="50" cy="58" rx="27" ry="30" fill="#D9A07A"/><path d="M22 46Q24 14 50 14T78 46Q64 28 50 30T22 46Z" fill="#2A1A18"/><path d="M50 14v14" stroke="#C9A24B" stroke-width="2"/><circle cx="50" cy="31" r="3" fill="#C9A24B"/><circle cx="50" cy="40" r="2.6" fill="#C21F3A"/><circle cx="24" cy="68" r="4" fill="#C9A24B"/><circle cx="76" cy="68" r="4" fill="#C9A24B"/><circle cx="38" cy="54" r="3.2" fill="#2A1A18"/><circle cx="62" cy="54" r="3.2" fill="#2A1A18"/><path d="M31 47Q38 43 45 47M55 47Q62 43 69 47" stroke="#2A1A18" stroke-width="2.3" fill="none"/><circle cx="57" cy="66" r="2.6" fill="none" stroke="#C9A24B" stroke-width="1.5"/><path d="M40 72Q50 82 60 72Z" fill="#C21F3A"/><path d="M50 56v8" stroke="#b9805b" stroke-width="2.5" stroke-linecap="round"/></symbol>
+<symbol id="fl" viewBox="0 0 40 40"><g fill="#F3A9BB"><circle cx="20" cy="8" r="7"/><circle cx="32" cy="17" r="7"/><circle cx="27" cy="31" r="7"/><circle cx="13" cy="31" r="7"/><circle cx="8" cy="17" r="7"/></g><circle cx="20" cy="20" r="5" fill="#E8B04B"/></symbol>
+</defs></svg>
+
+<div id="op"><div class="flash"></div>
+<div class="bl">Shree Ganeshaya Namah</div>
+<button class="seal" id="seal" aria-label="Open the invitation">A&amp;R<span class="ring"></span></button>
+<div class="cap" style="font-size:15px">Tap the seal to open</div></div>
+
+<svg id="flight" aria-hidden="true"><defs><clipPath id="cp"><rect id="cr" x="0" y="0" width="3000" height="1"/></clipPath></defs>
+<path id="p0" fill="none" stroke="#B5532A" stroke-opacity=".4" stroke-width="3.4" stroke-linecap="round" stroke-dasharray="0.1 15"/>
+<path id="p1" fill="none" stroke="#B5532A" stroke-opacity=".5" stroke-width="2.5" stroke-dasharray="12 8" clip-path="url(#cp)"/>
+<g id="pn" opacity=".6"><path d="M-34 0L34 -20L8 0L34 20Z" fill="#fff" stroke="#B5532A" stroke-width="2"/><path d="M-34 0L8 0L-6 16Z" fill="#F3C6CF"/><path d="M-42 0c-5-8-12-2-8 4l8 4z" fill="#C2185B"/></g></svg>
+<div id="gl" aria-hidden="true"></div><div id="pl" aria-hidden="true"></div><canvas id="cv" aria-hidden="true"></canvas>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+<div class="hbg" id="hbg" aria-hidden="true"><svg viewBox="0 0 400 800" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><use href="#fl" x="-10" y="40" width="90" height="90"/><use href="#fl" x="330" y="120" width="80" height="80"/><use href="#fl" x="-20" y="560" width="100" height="100"/><use href="#fl" x="320" y="640" width="90" height="90"/></svg></div>
+<div class="arch rv"><p class="bless">Shree Ganeshaya Namah</p>
+<h1 class="names">Anita <small>&amp;</small> Rahul</h1>
+<div class="rule">&#10048;</div>
+<p class="cap">Wedding Invitation</p>
+<p style="font-size:22px;margin-top:8px">4 December 2026</p>
+<div class="row"><a class="btn" href="#count">Save the Date</a></div>
+<p class="hint">Scroll</p></div></header>
+
+<!-- ===== COUPLE ===== -->
+<section class="s"><h2 class="rv">The Couple</h2>
+<div class="pair">
+<div class="c rv" style="--i:1"><svg viewBox="0 0 100 150" role="img" aria-label="Caricature of Anita"><path d="M12 150Q14 96 50 94T88 150Z" fill="#C21F3A"/><use href="#bh" width="100" height="100"/></svg><p class="cap">Bride</p><h3 class="script">Anita</h3><p>: A beautiful soul with a heart full of dreams and happiness.</p></div>
+<div class="c rv" style="--i:2"><svg viewBox="0 0 100 150" role="img" aria-label="Caricature of Rahul"><path d="M12 150Q14 96 50 94T88 150Z" fill="#F3EAD7"/><path d="M36 96L50 150L64 96" fill="#B3202F"/><use href="#gh" width="100" height="100"/></svg><p class="cap">Groom</p><h3 class="script">Rahul</h3><p>A kind-hearted soul ready to begin a beautiful journey of love.</p></div></div></section>
+
+<!-- ===== COUNTDOWN ===== -->
+<section class="s" id="count"><h2 class="rv">Counting Down</h2>
+<div class="c rv" id="cd"><div class="cd"><div><b id="d">0</b><span>Days</span></div><div><b id="h">0</b><span>Hours</span></div><div><b id="m">0</b><span>Minutes</span></div><div><b id="s">0</b><span>Seconds</span></div></div></div></section>
+
+<!-- ===== VENUE ===== -->
+<section class="s"><h2 class="rv">The Celebration</h2>
+<div class="dg rv"><div class="c"><b>Date</b>4 December 2026</div><div class="c"><b>Time</b>8:00 PM</div><div class="c"><b>Venue</b>royal  palce<br>Tatarpur Bhagalpur</div><div class="c"><b>Dress Code</b>Traditional Attire</div></div>
+<div class="row"><button class="btn o" id="ics">Add to Calendar</button><a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/GW4sc53C8Bh2ZxuR9?g_st=awb">Get Directions</a></div>
+<a class="map rv" target="_blank" rel="noopener" href="https://maps.app.goo.gl/GW4sc53C8Bh2ZxuR9?g_st=awb" aria-label="Open the venue in Google Maps"><svg viewBox="0 0 320 170"><rect width="320" height="170" fill="#EFE8F3"/><path d="M0 120Q90 90 160 110T320 70" stroke="#fff" stroke-width="16" fill="none"/><path d="M70 0Q100 80 90 170" stroke="#fff" stroke-width="12" fill="none"/><path d="M240 0Q220 90 260 170" stroke="#F6D8C8" stroke-width="10" fill="none"/><circle cx="40" cy="40" r="22" fill="#C9DDE0"/><g transform="translate(160 62)"><path d="M0 34C-18 10-16-14 0-14S16 10 0 34Z" fill="#C2185B"/><circle cy="-2" r="6" fill="#fff"/></g><text x="160" y="125" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="20" font-weight="700" fill="#5A4F5E">royal  palce</text></svg></a></section>
+
+<!-- ===== EVENTS ===== -->
+<section class="s"><h2 class="rv">Our Functions</h2><div class="tl" id="tl"></div></section>
+
+<!-- ===== ALBUM ===== -->
+<section class="s"><h2 class="rv">Our Moments</h2><div class="gal rv" id="gal"></div></section>
+<div id="lb" role="dialog" aria-label="Photo viewer"><img id="li" alt=""><div class="bar"><button id="lp" aria-label="Previous">&#8249;</button><span id="lc">1 / 5</span><button id="ln" aria-label="Next">&#8250;</button><button id="lx" aria-label="Close">&#10005;</button></div></div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="s ft">
+<svg class="couple rv" viewBox="0 0 260 300" role="img" aria-label="Illustration of Anita and Rahul"><path d="M24 100h80l12 190H12Z" fill="#F3EAD7"/><path d="M52 100L64 290H46Z" fill="#B3202F"/><path d="M150 100h72l38 190H112Z" fill="#C21F3A"/><path d="M112 280h148" stroke="#C9A24B" stroke-width="6"/><use href="#gh" x="14" y="0" width="100" height="100"/><use href="#bh" x="146" y="2" width="100" height="100"/></svg>
+<h2 style="margin-bottom:6px">Anita &amp; Rahul</h2>
+<p class="cap">4 December 2026</p><p>royal  palce, Tatarpur Bhagalpur</p>
+<div class="rule">&#10048;</div>
+<p>Your presence will make our celebration even more special. We look forward to celebrating this beautiful day with you.</p>
+<p>With love and blessings from the Sharma and Singh families.</p>
+<div class="row"><button class="btn" id="lan">Release a Wish Lantern</button></div></footer>
+
+<script>
+/* ===== DATA ===== */
+var MAPS="https://maps.app.goo.gl/GW4sc53C8Bh2ZxuR9?g_st=awb";
+var EV=[["Mehndi","25 Nov 2026","Wednesday","8:00 PM","Hussainpur","Traditional Attire","20261125T200000","20261125T230000"],
+["Haldi","26 Nov 2026","Thursday","11:00 AM","Hussainpur","Traditional Attire","20261126T110000","20261126T140000"],
+["Wedding","4 Dec 2026","Friday","8:00 PM","Hussainpur","Traditional Attire","20261204T200000","20261204T230000"],
+["Reception","6 Dec 2026","Sunday","7:30 PM","Hussainpur","Sadu Mahal","20261206T193000","20261206T223000"]];
+var PH=["50% 22%","50% 25%","50% 20%","50% 22%","50% 20%"];
+var $=function(s){return document.querySelector(s)},RM=matchMedia("(prefers-reduced-motion:reduce)").matches,PHONE=innerWidth<600;
+/* events */
+$("#tl").innerHTML=EV.map(function(e,i){return '<div class="ev c rv"><i>'+(i+1)+'</i><h3>'+e[0]+'</h3><p><b>'+e[1]+'</b>, '+e[2]+'<br>'+e[3]+'<br>'+e[4]+'<br>Dress code: '+e[5]+'</p><a target="_blank" rel="noopener" href="'+MAPS+'">Get Directions</a></div>'}).join("");
+/* album */
+$("#gal").innerHTML=PH.map(function(p,i){return '<button data-i="'+i+'" aria-label="Open photo '+(i+1)+'"><img src="photo'+(i+1)+'.jpg" alt="Anita and Rahul, photo '+(i+1)+'" style="object-position:'+p+'" loading="lazy"></button>'}).join("");
+/* lightbox */
+var cur=0,lb=$("#lb");
+function show(i){cur=(i+5)%5;$("#li").src="photo"+(cur+1)+".jpg";$("#li").alt="Anita and Rahul, photo "+(cur+1);$("#lc").textContent=(cur+1)+" / 5"}
+$("#gal").addEventListener("click",function(e){var b=e.target.closest("button");if(b){show(+b.dataset.i);lb.classList.add("on");$("#lx").focus()}});
+$("#lp").onclick=function(){show(cur-1)};$("#ln").onclick=function(){show(cur+1)};$("#lx").onclick=function(){lb.classList.remove("on")};
+addEventListener("keydown",function(e){if(!lb.classList.contains("on"))return;if(e.key==="Escape")lb.classList.remove("on");if(e.key==="ArrowLeft")show(cur-1);if(e.key==="ArrowRight")show(cur+1)});
+var tx=0;lb.addEventListener("touchstart",function(e){tx=e.touches[0].clientX},{passive:true});
+lb.addEventListener("touchend",function(e){var d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)show(cur+(d<0?1:-1))},{passive:true});
+/* countdown (fixed IST) */
+var T=Date.parse("2026-12-04T20:00:00+05:30");
+function tick(){var r=T-Date.now();if(r<=0){$("#cd").innerHTML='<p class="script" style="font-size:48px">Just Married</p>';return}
+var f=function(n){return Math.floor(n)};$("#d").textContent=f(r/864e5);$("#h").textContent=f(r%864e5/36e5);$("#m").textContent=f(r%36e5/6e4);$("#s").textContent=f(r%6e4/1e3);setTimeout(tick,1000)}
+tick();
+/* calendar */
+$("#ics").onclick=function(){var s="BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Wedding Invite//EN\r\n";
+EV.forEach(function(e,i){s+="BEGIN:VEVENT\r\nUID:ev"+i+"@anita-rahul\r\nDTSTAMP:20261124T000000Z\r\nDTSTART;TZID=Asia/Kolkata:"+e[6]+"\r\nDTEND;TZID=Asia/Kolkata:"+e[7]+"\r\nSUMMARY:"+e[0]+" - Anita & Rahul\r\nLOCATION:"+e[4]+"\r\nURL:"+MAPS+"\r\nEND:VEVENT\r\n"});
+s+="END:VCALENDAR";var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([s],{type:"text/calendar"}));a.download="anita-rahul-wedding.ics";document.body.appendChild(a);a.click();a.remove()};
+/* scroll reveal */
+var io=new IntersectionObserver(function(l){l.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(n,i){io.observe(n)});
+/* lanterns */
+$("#lan").onclick=function(){if(RM)return;for(var i=0;i<3;i++){var l=document.createElement("div");l.className="ln";l.style.left=(18+i*30+Math.random()*10)+"vw";document.body.appendChild(l);
+l.animate([{transform:"translateY(0)",opacity:0},{opacity:1,offset:.15},{transform:"translateY(-110vh)",opacity:0}],{duration:7000+i*900,delay:i*400,easing:"ease-out",fill:"forwards"}).onfinish=function(){this.effect.target.remove()}}};
+/* ===== OPENING ===== */
+function start(){if(RM)return;
+var P=$("#pl"),n=PHONE?10:18;for(var i=0;i<n;i++){var p=document.createElement("div");p.className="pt";p.style.cssText="--x:"+Math.random()*100+"vw;--d:"+(11+Math.random()*8)+"s;--w:-"+Math.random()*14+"s";p.innerHTML="<i></i>";P.appendChild(p)}
+var G=$("#gl"),g=PHONE?20:34;for(i=0;i<g;i++){var t=document.createElement("span");t.className="gt";t.style.cssText="--x:"+Math.random()*100+"%;--y:"+Math.random()*100+"%;--z:"+(6+Math.random()*8)+"px;--d:"+(3+Math.random()*4)+"s;--w:-"+Math.random()*6+"s";G.appendChild(t)}
+glow()}
+function open(){var op=$("#op");op.classList.add("go");
+if(!RM)for(var i=0;i<26;i++){var s=document.createElement("i");s.className="sp";op.appendChild(s);var a=Math.random()*6.28,d=90+Math.random()*190;
+s.animate([{transform:"translate(-50%,-50%) scale(1)",opacity:1},{transform:"translate("+Math.cos(a)*d+"px,"+Math.sin(a)*d+"px) scale(.2)",opacity:0}],{duration:1300,easing:"ease-out",fill:"forwards"})}
+setTimeout(function(){op.classList.add("out");document.body.classList.remove("lock");start()},RM?0:1100);
+setTimeout(function(){op.remove()},RM?50:2100)}
+$("#seal").addEventListener("click",open,{once:true});
+/* ===== PAPER-PLANE FLIGHT PATH ===== */
+var fl=$("#flight"),p0=$("#p0"),p1=$("#p1"),pn=$("#pn"),cr=$("#cr"),H=0,W=0,L=0;
+function build(){H=document.documentElement.scrollHeight;W=innerWidth;fl.setAttribute("width",W);fl.setAttribute("height",H);fl.style.height=H+"px";cr.setAttribute("width",W);cr.setAttribute("height",H);
+var k=Math.max(2,Math.round(H/520)),d="M"+W*.1+" 0",x0=W*.1,y0=0;
+for(var i=1;i<=k;i++){var x1=i%2?W*.9:W*.1,y1=H*i/k,m=(y0+y1)/2;d+=" C"+x0+" "+m+" "+x1+" "+m+" "+x1+" "+y1;x0=x1;y0=y1}
+p0.setAttribute("d",d);p1.setAttribute("d",d);L=p0.getTotalLength();move()}
+function move(){if(!L)return;var y=scrollY+innerHeight*.42,lo=0,hi=L;
+for(var i=0;i<14;i++){var m=(lo+hi)/2;if(p0.getPointAtLength(m).y<y)lo=m;else hi=m}
+var a=p0.getPointAtLength(lo),b=p0.getPointAtLength(Math.min(L,lo+4)),w=Math.min(1,68/68),ang=Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI;
+pn.setAttribute("transform","translate("+a.x+" "+a.y+") rotate("+ang+")");cr.setAttribute("transform","translate(0 "+(a.y-H)+")")}
+build();addEventListener("resize",build);new ResizeObserver(function(){if(document.documentElement.scrollHeight!==H)build()}).observe(document.body);
+/* scroll: parallax + plane */
+var tk=false;addEventListener("scroll",function(){if(tk)return;tk=true;requestAnimationFrame(function(){tk=false;move();if(!RM)$("#hbg").style.transform="translate3d(0,"+(scrollY*.35)+"px,0)"})},{passive:true});
+/* ===== CANDLE-GLOW CURSOR / TAP RIPPLE ===== */
+function glow(){var c=$("#cv"),x=c.getContext("2d"),dpr=Math.min(devicePixelRatio||1,2),pts=[],run=false,mx=0,my=0,touch=false;
+function rs(){c.width=innerWidth*dpr;c.height=innerHeight*dpr}rs();addEventListener("resize",rs);
+function go(){if(!run){run=true;requestAnimationFrame(fr)}}
+addEventListener("pointermove",function(e){if(e.pointerType==="touch")return;mx=e.clientX;my=e.clientY;pts.push({x:mx,y:my,t:performance.now(),r:0});go()},{passive:true});
+addEventListener("pointerdown",function(e){if(e.pointerType==="touch"){pts.push({x:e.clientX,y:e.clientY,t:performance.now(),r:1});go()}},{passive:true});
+function fr(now){x.setTransform(dpr,0,0,dpr,0,0);x.clearRect(0,0,innerWidth,innerHeight);pts=pts.filter(function(p){return now-p.t<(p.r?900:500)});
+pts.forEach(function(p){var a=(now-p.t)/(p.r?900:500),rad=p.r?20+a*70:30+Math.sin(now/90)*3,al=(1-a)*(p.r?.5:.35),g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,rad);
+g.addColorStop(0,"rgba(255,176,96,"+al+")");g.addColorStop(1,"rgba(194,24,91,0)");x.fillStyle=g;x.fillRect(p.x-rad,p.y-rad,rad*2,rad*2)});
+if(pts.length)requestAnimationFrame(fr);else run=false}}
+</script>
+</body>
+</html>
